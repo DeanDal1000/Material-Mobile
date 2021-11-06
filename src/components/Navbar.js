@@ -8,13 +8,7 @@ import {
   Toolbar,
   Typography,
 } from '@material-ui/core';
-import {
-  Cancel,
-  DeviceHub,
-  Mail,
-  Notifications,
-  Search,
-} from '@material-ui/icons';
+import { Cancel, Mail, Notifications, Search } from '@material-ui/icons';
 import { useState } from 'react';
 
 const useStyles = makeStyles((theme) => ({
@@ -79,10 +73,10 @@ const Navbar = () => {
     <AppBar position="fixed">
       <Toolbar className={classes.toolbar}>
         <Typography variant="h6" className={classes.logoLg}>
-          Banana
+          Material
         </Typography>
         <Typography variant="h6" className={classes.logoSm}>
-          <DeviceHub />
+          M
         </Typography>
         <div className={classes.search}>
           <Search />
@@ -100,10 +94,7 @@ const Navbar = () => {
           <Badge badgeContent={2} color="secondary" className={classes.badge}>
             <Notifications />
           </Badge>
-          <Avatar
-            alt="Remy Sharp"
-            src="https://images.pexels.com/photos/8647814/pexels-photo-8647814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-          />
+          <Avatar alt="Dean" src="" />
         </div>
       </Toolbar>
     </AppBar>
